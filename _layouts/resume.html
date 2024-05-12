@@ -10,12 +10,12 @@
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
       <header class="page-header">
-
+        {% include icon-links.html %}
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
         <p><a href="https://xperanzo.github.io/"><img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image"></a></p>
         {% endif %}
-        {% include icon-links.html %}
+
         <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
