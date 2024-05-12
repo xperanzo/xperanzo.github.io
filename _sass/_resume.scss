@@ -81,12 +81,12 @@
   position: relative;
   top: 4px;
   text-align: center;
-  padding-top: .4rem;
+  padding-top: 0px;
 
   @include media_larger_than_mobile {
     float: none;
     border-top: none;
-    padding-top: -80;
+    padding-top: 0;
   }
 
   .icon-link-item {
