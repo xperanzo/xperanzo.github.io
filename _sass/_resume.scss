@@ -86,7 +86,7 @@
   @include media_larger_than_mobile {
     float: none;
     border-top: none;
-    padding-top: 0;
+    padding-top: -80;
   }
 
   .icon-link-item {
