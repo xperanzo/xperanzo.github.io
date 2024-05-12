@@ -81,7 +81,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid #3e0afa;
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -110,7 +110,7 @@
 
 .contact-button {
   @include border-radius(3px);
-  background-color: #efefef;
+  background-color: #1afa06;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -118,13 +118,13 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: #ec0404;
   line-height: 55px;
   @include transition(all .2s ease);
 
   &:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #ecf003;
+    color: #f000f8;
   }
 
   &.not-looking { width: 400px; }
