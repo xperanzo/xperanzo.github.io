@@ -1,20 +1,7 @@
 // Base styles
 // ---------------------------------------/
 * {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-html {
-  background: $white;
-}
-
-body{
-  @include serif;
-  color: $text_color;
-  font-size: 16px;
-  line-height: 1.5;
-}
 
 .wrapper:before,
 .wrapper:after { content:""; display:table; }
