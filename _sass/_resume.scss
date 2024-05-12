@@ -109,6 +109,7 @@
 
 .contact-button {
   @include border-radius(22px);
+  border: 2px solid #333333;
   background-color: #efefef;
   text-decoration: none;
   text-align: center;
