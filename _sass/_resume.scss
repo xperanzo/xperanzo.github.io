@@ -81,7 +81,6 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -109,7 +108,7 @@
 }
 
 .contact-button {
-  @include border-radius(3px);
+  @include border-radius(22px);
   background-color: #efefef;
   text-decoration: none;
   text-align: center;
@@ -131,7 +130,7 @@
 }
 
 .contact-button2 {
-  @include border-radius(33px);
+  @include border-radius(22px);
   border: 2px solid #333333;
   background-color: #fdd304;
   text-decoration: none;
