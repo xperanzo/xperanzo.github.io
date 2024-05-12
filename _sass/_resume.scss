@@ -75,11 +75,10 @@
 }
 
 .icon-links {
-  border: 2px solid #333333;
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative;
+  position: left;
   top: 4px;
   text-align: center;
   border-top: 2px solid #c7c7c7;
@@ -105,7 +104,7 @@
   }
 
   .icon {
-    height: 128px;
+    height: 28px;
   }
 }
 
