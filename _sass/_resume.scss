@@ -108,7 +108,7 @@
 }
 
 .contact-button {
-  @include border-radius(22px);
+  @include border-radius(32px);
   border: 2px solid #333333;
   background-color: #efefef;
   text-decoration: none;
@@ -131,7 +131,7 @@
 }
 
 .contact-button2 {
-  @include border-radius(22px);
+  @include border-radius(32px);
   border: 2px solid #333333;
   background-color: #fdd304;
   text-decoration: none;
