@@ -81,7 +81,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  padding-top: -180px;
+  padding-top: .0rem;
 
   @include media_larger_than_mobile {
     float: none;
