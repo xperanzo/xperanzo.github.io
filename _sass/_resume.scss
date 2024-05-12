@@ -84,20 +84,13 @@
   border-top: 2px solid #c7c7c7;
   padding-top: .4rem;
 
-
-
-  .icon-link-item {
-    display: inline-block;
-    margin-left: 5px;
+  @include media_larger_than_mobile {
+    float: right;
+    border-top: none;
+    padding-top: 0;
   }
 
-  .icon-link { display: inline-block;
 
-    &:hover .icon path {
-      fill: #333;
-      @include transition(all .2s ease);
-    }
-  }
 
   .icon {
     height: 28px;
