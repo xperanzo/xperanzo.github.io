@@ -37,6 +37,11 @@
     <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_twitch_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitch.html %}</a></li>
     {% endif %}
 
+    <!-- Live link -->
+    {% if site.resume_social_links.resume_live_url %}
+    <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_live_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitch.html %}</a></li>
+    {% endif %}  
+
     <!-- Tiktok link -->
     {% if site.resume_social_links.resume_tiktok_url %}
     <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_tiktok_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-tiktok.html %}</a></li>
