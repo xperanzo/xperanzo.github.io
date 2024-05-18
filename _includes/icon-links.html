@@ -37,9 +37,19 @@
     <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_twitch_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitch.html %}</a></li>
     {% endif %}
 
-    <!-- Live link -->
-    {% if site.resume_social_links.resume_live_url %}
-    <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_live_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-live.html %}</a></li>
+    <!-- Twitch-live link -->
+    {% if site.resume_social_links.resume_twitch-live_url %}
+    <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_twitch-live_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitch-live.html %}</a></li>
+    {% endif %}  
+
+    <!-- Kick link -->
+    {% if site.resume_social_links.resume_kick_url %}
+    <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_kick_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-kick.html %}</a></li>
+    {% endif %}
+
+    <!-- Kick-live link -->
+    {% if site.resume_social_links.resume_kick-live_url %}
+    <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_kick-live_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-kick-live.html %}</a></li>
     {% endif %}  
 
     <!-- Tiktok link -->
