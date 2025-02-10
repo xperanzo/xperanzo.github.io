@@ -1,4 +1,0 @@
----
-layout: commission
-title: Commission
----

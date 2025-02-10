@@ -13,7 +13,7 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <a href="/"><img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image"></a>
+        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -39,14 +39,12 @@
           {{ site.resume_header_intro }}
         </div>
 
-        <a href="https://xperanzo.substack.com/subscribe" class="contact-button2 no-print" itemprop="email"><!-- <img src="images\subscribe.png"> -->Subscribe<!--<span style="font-size:18px;"><sup>(free)</sup></span>--></a>
-		
-        <a href="/donate" class="contact-button no-print" itemprop="email"><!-- <img src="images\donate.png"> -->Donate</a>
-
-        <a href="/Stream_schedule" class="contact-button no-print" itemprop="email"><!-- <img src="images\donate.png"> -->Stream schedule</a>
-		
-        <a href="/commission" class="contact-button no-print" itemprop="email"><!-- <img src="images\commission.png"> -->Commission</a>
-
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
 
       </header>
 
@@ -234,8 +232,8 @@
       {% endif %}
 
       <footer class="page-footer">
-       <!-- <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>-->
-        <p class="footer-line">xperanzo@gmail.com</p>
+        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
+        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
       </footer>
 
     </div>
