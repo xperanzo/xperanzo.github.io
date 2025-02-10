@@ -32,10 +32,10 @@
   .header-name {
     @include sans;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
     letter-spacing: -.15rem;
-    line-height: 0.7;
+    line-height: 1;
     margin: 1rem 0 0;
   }
 
@@ -49,7 +49,7 @@
 
   .title-bar {
     @include section_border;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: .4rem 0;
     @include clearfix;
 
@@ -60,7 +60,7 @@
       line-height: 2rem;
       letter-spacing: -.05rem;
       text-align: center;
-      margin: 0 0 .1rem;
+      margin: 0 0 .5rem;
 
       @include media_larger_than_mobile {
         float: left;
@@ -79,7 +79,7 @@
   padding: 0;
   list-style: none;
   position: relative;
-  top: 3px;
+  top: 4px;
   text-align: center;
   padding-top: .0rem;
 
@@ -91,7 +91,7 @@
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 3px;
+    margin-left: 5px;
   }
 
   .icon-link { display: inline-block;
@@ -113,7 +113,7 @@
   text-decoration: none;
   text-align: center;
   display: block;
-  margin: 1.0rem auto;
+  margin: 1.5rem auto;
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
@@ -135,7 +135,7 @@
   text-decoration: none;
   text-align: center;
   display: block;
-  margin: 1.0rem auto;
+  margin: 1.5rem auto;
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
@@ -199,7 +199,7 @@
 
 .page-footer {
   border-top: 4px solid #c7c7c7;
-  padding-top: 1.0rem;
+  padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
 
