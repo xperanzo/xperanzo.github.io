@@ -1,9 +1,0 @@
-- name: instagram
-  url: https://www.instagram.com/ssol2thecat
-  icon: ri:instagram-fill
-  color: '#E4405F'
-
-- name: youtube
-  url: https://www.youtube.com/@user-ge6cv6ln9f
-  icon: ri:youtube-fill
-  color: '#FF0000'
