@@ -1,5 +1,5 @@
 # Jekyll
-theme: linkhub-jekyll-theme
+theme: linkhub-jekyll-theme.gemspec
 
 # Site Configuration
 name: Linkhub  # Name of your website
