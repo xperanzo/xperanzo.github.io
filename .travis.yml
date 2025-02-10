@@ -1,11 +1,6 @@
 language: ruby
-
 rvm:
-  - 2.5.0
+- 2.6.5
 
-script: bundle exec jekyll build
-
-install: bundle install
-
-notifications:
-  email: false
+install: gem install dev-portfolio-blog jemoji
+script: jekyll build

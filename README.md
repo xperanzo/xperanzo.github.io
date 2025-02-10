@@ -1,66 +1,191 @@
-# Resume template
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
+![](https://ruby-gem-downloads-badge.herokuapp.com/dev-portfolio-blog)
 
-*A simple Jekyll + GitHub Pages powered resume template.*
+[![CodeFactor](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog/badge)](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0b9f1c23f564a8195a8588de7895c4c)](https://www.codacy.com/manual/rohitjain00/dev-portfolio-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rohitjain00/dev-portfolio-blog&amp;utm_campaign=Badge_Grade)
 
-![img](images/screenshot.png)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Frohitjain00%2Fdev-portfolio-blog&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## Docs
+## Home pagespeed
 
-### Running locally
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&strat=desktop&showStratLabel=true)
 
-To test locally, run the following in your terminal:
 
-1. Clone repo locally
-1. `bundle install`
-2. `bundle exec jekyll serve`
-3. Open your browser to `localhost:4000`
+## Blog pagespeed
 
-### Running locally with Docker
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&strat=desktop&showStratLabel=true)
 
-To test locally with docker, run the following in your terminal after installing docker into your system:
 
-1. `docker image build -t resume-template .`
-2. `docker run --rm --name resume-template -v "$PWD":/home/app --network host resume-template`
 
-### Customizing
+# dev-portfolio-blog
 
-First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
+This is a minimal jekyll theme for writing blogs and about yourself.
 
-#### Options/configuration
+## features
+ 1. Google Analytics
+ 2. Many themes such as: Default, Solarized, and Sepia. All in light and dark modes.
+ 3. Disqus comments
+ 4. Categorization
+ 5. Emojis Support
+ 6. Highly optimized blog
+     #### PageSpeed Insights
+     * [Home](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com)[(therohitjain.com)](https://therohitjain.com)
+     * [Blog](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/blog/)[(therohitjain.com/blog/)](https://therohitjain.com/blog/)
+     * [About](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/about/)[(therohitjain.com/about/)](https://therohitjain.com/about/)
 
-Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
 
-[...write these out...]
+## Desktop Preview
 
-#### Editing content
+![Home Page](/screenshots/Home.png?raw=true "Home View of the website")
 
-Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
+![Blog List Page](/screenshots/Blog.png?raw=true "Blog List of the website")
 
-### Publishing to GitHub Pages for free
+## Mobile Preview
 
-[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
+![Home Page](/screenshots/Home-Mobile.png?raw=true "Home View of the website")
 
-### Configuring with your own domain name
+![Blog List Page](/screenshots/Blog-Mobile.png?raw=true "Blog List of the website")
 
-To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
 
-### Themes
+## Installation
 
-Right now resume-template only has one theme. More are coming :soon: though. :heart:
+Add this line to your Jekyll site's `Gemfile`:
 
-## Roadmap
+```ruby
+gem "dev-portfolio-blog"
+```
 
-A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: dev-portfolio-blog
+```
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install dev-portfolio-blog
+
+## Usage
+
+To start using the theme you either follow these steps or simply fork my repo https://github.com/rohitjain00/rohitjain00.github.io and update the files.
+
+### Recommended
+ Please use the theme as the plugin so that all the latest updated for this theme comes directly in your website.
+
+#### Clone the branch `master` and change the theme accordingly.
+
+
+### Starting from the beginning:
+Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
+
+1. Add a `favicon.ico` to the root directory for favicon.
+
+2. Create `blog.md` in the root folder ans set its yaml parameters to
+
+```yaml
+layout: blog
+permalink: /blog/
+title: [Blog Page Title]
+pagination:
+  enabled: true
+```
+
+3. Change your `about.md` yaml parameters to following
+
+```yaml
+layout: description
+permalink: /about/
+title: About
+```
+
+3. In the `index.md` file add
+
+```yaml
+layout: home
+home_text: Text
+title: [Home Page Title]
+```
+
+4. Create a new `categories.md` file in root with following yaml parameters
+```yaml
+layout: categories
+permalink: /categories/
+title: Categories
+```
+
+4. In the `_config.yml` file add following and change accordingly
+
+Path is relative to the root directory
+```yaml
+resume_url: [PATH_TO_RESUME]
+author_name: [YOUR_NAME]
+description: [SITE_DESCRIPTION]
+url: [WEBSITE_URL]
+google_analytics: '[google analytics Id]'
+disqus:
+    shortname: [discus-shotname]
+```
+
+### Minifier
+
+Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
+
+### Pagination
+
+Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
+
+### Check here [_config.yml](https://github.com/rohitjain00/rohitjain00.github.io/blob/site/_config.yml) for example config file.
+
+
+## Writing a new blog
+
+Create a new folder `_posts` in root folder if not already exists.
+
+1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
+2. Make sure that disqus's shortname is valid.
+3. Add yaml configuartion to the post
+
+```yaml
+---
+layout: post
+comments: [true | false]
+title: Hello World
+categories: [category1, category2]
+---
+Post Text.
+```
+
+## Troubleshooting
+- ` Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes`
+   Node JS is missing from your system. In ubuntu install using `sudo apt-get install nodejs` or refer to [this](https://stackoverflow.com/questions/9202324/execjs-could-not-find-a-javascript-runtime-but-execjs-and-therubyracer-are-in)
+
 
 ## Contributing
 
-If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
+Bug reports and pull requests are welcome on GitHub at <https://github.com/rohitjain00/dev-portfolio-blog/.> This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
-2. Fork the project, make changes, and submit a pull request
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `dev-portfolio-blog.gemspec` accordingly.
+
+### Read about the themes and how it's implemented [here](https://github.com/rohitjain00/dev-portfolio-blog/wiki/Theme-Management)
 
 ## License
 
-The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-Disclaimer: Use of Lisa M. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.
+If you like my work, you can buy me a coffee here :smile:
+
+<a href="https://www.buymeacoffee.com/rohitjain00" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
